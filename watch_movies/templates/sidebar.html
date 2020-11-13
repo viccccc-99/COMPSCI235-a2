@@ -1,0 +1,16 @@
+<aside id="sidebar">
+
+    <header>
+        <h1>Recommended movies</h1>
+    </header>
+
+    {% for movie in selected_movies %}
+        <div id="movie-container">
+            <img src={{movie.imagelink}} alt="movie" style='width:278.9291338px;height:413.102362px;'>
+            <div id="movie-description">
+                <h2>{{ movie.title }}, ({{ movie.year }}).</h2>
+                <p>{{ movie.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</aside>
